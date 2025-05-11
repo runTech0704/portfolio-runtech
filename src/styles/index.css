@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-light dark:bg-dark text-slate-800 dark:text-slate-200;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+  
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+  
+  li {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply max-w-[1240px] mx-auto px-4 py-16;
+  }
+  
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 relative inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-primary transform translate-y-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-sky-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold py-2 px-6 rounded-md transition duration-300;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300;
+  }
+  
+  .skill-item {
+    @apply flex flex-col items-center justify-center p-4 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:scale-105;
+  }
+  
+  .input-field {
+    @apply w-full p-3 rounded-md border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-slate-800;
+  }
+}
+
+/* ローディングアニメーション */
+.loader {
+  @apply fixed inset-0 flex items-center justify-center bg-slate-900 z-50;
+}
+
+.loader-content {
+  @apply text-center;
+}
+
+.loader-spinner {
+  @apply w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4;
+}
+
+/* スクロールアニメーション */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ナビゲーション */
+.nav-link {
+  @apply relative;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  @apply w-full;
+}
+
+/* プロジェクトカード */
+.project-card {
+  @apply relative overflow-hidden rounded-xl shadow-lg;
+}
+
+.project-card img {
+  @apply transition-transform duration-500;
+}
+
+.project-card:hover img {
+  @apply transform scale-110;
+}
+
+.project-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6;
+}
+
+.project-card:hover .project-overlay {
+  @apply opacity-100;
+}
+
+/* タイピングアニメーション */
+.typed-cursor {
+  @apply text-primary;
+}
+
+/* カスタムスクロールバー */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-200 dark:bg-slate-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-sky-600;
+}
