@@ -19,7 +19,7 @@ const Projects = () => {
       title: '新製品開発',
       description:
         'BtoB 向けの新規 SaaS プロダクト開発にバックエンドエンジニアとして参画。AlloyDBと共有VPCを導入。',
-      image: '/project-workflow.jpg',
+      image: '/rakumo.jpg',
       technologies: ['Python', 'Django', 'GCP App Engine', 'GCP AlloyDB (Postgres)', '共有VPC', 'Cloud Build', 'Docker', 'Git', 'GitHub'],
       category: 'backend',
     },
@@ -28,7 +28,7 @@ const Projects = () => {
       title: 'rakumo カレンダー開発',
       description:
         'GCP App Engine と Django を使用したGoogleカレンダー拡張アプリ。追加機能開発に5件に、仕様検討から設計、実装までを担当',
-      image: '/project-microservices.jpg',
+      image: '/rakumo.jpg',
       technologies: ['Python', 'Django', 'Google Calendar API','GCP App Engine', 'GCP Firestore' ,'Cloud Build', 'Docker', 'Git', 'GitHub'],
       github: '',
       demo: '',
@@ -50,7 +50,7 @@ const Projects = () => {
       title: 'スクラム開発導入',
       description:
         '会社内の開発スピードに課題を感じ、スクラム開発を提案・導入。',
-      image: '/project-microservices.jpg',
+      image: '/scrum.png',
       technologies: ['スクラム開発', 'アジャイル開発'],
       github: '',
       demo: '',

@@ -77,7 +77,7 @@ const Header = () => {
       <div className="flex justify-between items-center w-full h-full px-6 md:px-10 2xl:px-16">
         <Link to="home" smooth={true} duration={500}>
           <h1 className="text-xl md:text-2xl font-bold cursor-pointer">
-            <span className="text-primary">る</span>ん <span className="text-primary">る</span>ん
+            <span className="text-primary">る</span>んるん
           </h1>
         </Link>
 

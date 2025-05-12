@@ -22,19 +22,13 @@ const Footer = () => {
     {
       id: 'github',
       icon: <FaGithub />,
-      url: 'https://github.com/your-github',
+      url: 'https://github.com/runTech0704',
       label: 'GitHub',
-    },
-    {
-      id: 'linkedin',
-      icon: <FaLinkedin />,
-      url: 'https://linkedin.com/in/your-linkedin',
-      label: 'LinkedIn',
     },
     {
       id: 'twitter',
       icon: <FaTwitter />,
-      url: 'https://twitter.com/your-twitter',
+      url: 'https://x.com/runrun071719842',
       label: 'Twitter',
     },
   ];
@@ -46,7 +40,7 @@ const Footer = () => {
           {/* ロゴと説明 */}
           <div className="mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-4">
-              <span className="text-primary">F</span>ujiwara <span className="text-primary">S</span>atoru
+              <span className="text-primary">る</span>んるん
             </h2>
             <p className="text-slate-400 mb-4">
               Python/Djangoを専門とするバックエンドエンジニア。GCPを活用した
@@ -110,7 +104,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            
+
             <h3 className="text-xl font-bold mt-6 mb-4">技術スタック</h3>
             <p className="text-slate-400">
               Python | Django | GCP | Cloud Run | App Engine | Firestore | AlloyDB
@@ -120,7 +114,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-500 text-center md:text-left mb-4 md:mb-0">
-            &copy; {currentYear} 藤原悟. All rights reserved.
+            &copy; {currentYear} るんるん. All rights reserved.
           </p>
           <p className="text-slate-500 flex items-center">
             Made with <FaHeart className="text-primary mx-1" /> using React & Tailwind CSS
